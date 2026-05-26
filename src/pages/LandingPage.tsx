@@ -188,9 +188,9 @@ export default function LandingPage() {
       <NavBar />
 
       {/* Sticky WhatsApp Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-6 right-6 z-50 ">
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-          <button className="h-16 w-16 bg-[#25D366] hover:bg-[#20b858] text-white rounded-full flex items-center justify-center shadow-2xl hover:shadow-[#25D366]/30 transition-all hover:scale-105 active:scale-95 group">
+          <button className="h-16 w-16 bg-[#25D366] hover:bg-[#20b858] cursor-pointer text-white rounded-full flex items-center justify-center shadow-2xl hover:shadow-[#25D366]/30 transition-all hover:scale-105 active:scale-95 group">
             <MessageCircle className="h-8 w-8 group-hover:animate-pulse" />
           </button>
         </a>
@@ -827,14 +827,37 @@ export default function LandingPage() {
 
               <AccordionItem value="item-5" className="border-border">
                 <AccordionTrigger className="text-left text-lg font-medium hover:text-primary transition-colors py-6">
-                  Eu acho que é "coisa normal da idade", vale a pena consultar
-                  mesmo assim?
+                  O prédio possui estacionamento?
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
-                  Sim, porque saber que é normal também é um diagnóstico. Em
-                  muitos casos, a consulta serve para dar tranquilidade aos
-                  pais. E nos casos em que não é normal, a diferença de um
-                  diagnóstico precoce é enorme.
+                  Sim. O prédio conta com estacionamento próprio, com cobrança à parte. Também há vagas disponíveis na rua em frente ao prédio, sujeitas à disponibilidade.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border-border">
+                <AccordionTrigger className="text-left text-lg font-medium hover:text-primary transition-colors py-6">
+                  Qual é a duração da consulta?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+                  A consulta tem duração aproximada de 1 hora.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-7" className="border-border">
+                <AccordionTrigger className="text-left text-lg font-medium hover:text-primary transition-colors py-6">
+                  Como funcionam os retornos?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+                  Os retornos podem ser realizados em até 30 dias após a consulta, desde que estejam relacionados à queixa tratada anteriormente ou à avaliação de exames solicitados. Após esse prazo, ou em casos de novas queixas, será necessário agendar uma nova consulta.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-8" className="border-border">
+                <AccordionTrigger className="text-left text-lg font-medium hover:text-primary transition-colors py-6">
+                  Preciso levar exames de imagem?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+                  Caso seja necessário levar exames de imagem, pedimos que nos avise com antecedência para que possamos fazer a solicitação antes da consulta.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -906,12 +929,18 @@ export default function LandingPage() {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
+                  <a 
+                    href="https://maps.app.goo.gl/fQRKxF56JDSXoj7X9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 hover:text-white transition-colors"
+                    >
+                      
                   <MapPin className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                   <span>
-                    Vila da Serra, Nova Lima
-                    <br />
-                    Belo Horizonte – MG
+                      Rua Ministro Orozimbo Nonato, 442, Vila da Serra, Andar 11 Sala 1113, Nova Lima, MG, 34006-053.
                   </span>
+                  </a>
                 </li>
               </ul>
             </div>
